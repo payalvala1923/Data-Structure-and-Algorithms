@@ -1,0 +1,15 @@
+vector<int> ans;
+    void fun(int l,TreeNode* root){
+        if(!root) return;
+        if(ans.size()==l){
+            ans.push_back(root->val);
+        }
+        fun(1+l,root->right);
+        fun(1+l,root->left);
+    }
+    vector<int> rightSideView(TreeNode* root) {
+        
+        fun(0,root);
+       return ans;
+        
+    }
