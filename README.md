@@ -1,5 +1,4 @@
 # Data-Structure-and-Algorithms
-Topic wise problem solution
 
 
 ************************************ Heap ******************************************
